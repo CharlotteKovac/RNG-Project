@@ -29,21 +29,21 @@ let rand = Math.floor(Math.random() * 6);
 let descriptor = '';
 switch (rand) {
     case 0:
-        descriptor = "Great for cozy, chill moments.";
+        descriptor = "relax and snuggle in for those cozy, chill moments.";
         break;
     case 1:
-        descriptor = 'To customize characters and go on a thrilling adventure that rivals the trek to the kitchen...'
+        descriptor = 'to customize characters and go on a thrilling adventure that rivals the trek to the kitchen...'
         break;
     case 2:
-        descriptor = "Not for the faint of heart. These colonist's lives are in your hands.";
+        descriptor = "save your colonists, their lives are in your hands. Not for the faint of heart.";
         break;
     case 3:
-        descriptor = "Cause you get to play as beavers. Need I say more?";
+        descriptor = "to enjoy life as a beaver. Need I say more?";
         break;
     case 4:
-        descriptor = "To research and battle your way to the top!";
+        descriptor = "to research and battle your way to the top!";
         break;
     case 5:
-        descriptor = "To burn that pesky world to the ground.";
+        descriptor = "to burn that pesky world to the ground.";
 }
-console.log(`The ideal game for you is...${gamesToPlay}. This game can ${descriptor}.`); //pulls gTP value from rNGR, also pulls rand and descriptor
+console.log(`The ideal game for you is...${gamesToPlay} The goal is ${descriptor}.`); //pulls gTP value from rNGR, also pulls rand and descriptor
