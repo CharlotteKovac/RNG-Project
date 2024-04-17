@@ -25,9 +25,9 @@ switch (rNGRange) { //switch to pull from rNGR
         gamesToPlay = 'Dark Souls.'; //gTP value 5 to Dark Souls
 
 }
-let rand = Math.floor(Math.random() * 6);
+let dscrptn = Math.floor(Math.random() * 6);
 let descriptor = '';
-switch (rand) {
+switch (dscrptn) {
     case 0:
         descriptor = "relax and snuggle in for those cozy, chill moments.";
         break;
@@ -46,4 +46,28 @@ switch (rand) {
     case 5:
         descriptor = "to burn that pesky world to the ground.";
 }
-console.log(`The ideal game for you is...${gamesToPlay} The goal is ${descriptor}.`); //pulls gTP value from rNGR, also pulls rand and descriptor
+let typeOfGame = Math.floor(Math.random() * 6);
+let genre = '';
+switch (typeOfGame) {
+    case 0:
+        genre = 'This is really pleasant.';
+        break;
+    case 1:
+        genre = 'Oh God, WHY?!';
+        break;
+    case 2:
+        genre = 'Have my tea and blanket, ready to relax.';
+        break;
+    case 3:
+        genre = 'I hate this...';
+        break;
+    case 4:
+        genre = 'Nothing on the agenda, just gonna enjoy.';
+        break;
+    case 5:
+        genre = 'AHHHHHHHHHHH! Make it stop!';
+}
+
+
+
+console.log(`The ideal game for you is...${gamesToPlay} The goal is ${descriptor}. The feel of the game: ${genre}`); //pulls gTP value from rNGR, also pulls rand and descriptor
